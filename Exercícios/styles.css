@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    gap: 5px;
+    background-color: black;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header img{
+    width: 80px;
+}
+
+.main{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 10px;
+
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+
+section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    width: 250px;
+    height: 250px;
+    gap: 10px;
+}
+
+ section img{
+    width: 150px;
+    height: 150px;
+ }
+
+ section div .valor-produto{
+    color: rgb(25, 114, 3);
+    font-size: 22px;
+ }
+
+ .final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .final .pedido-total{
+    width: 400px;
+    padding: 15px
+ }
+
+ .final .pedido-total h4{
+    color: rgb(25, 114, 3);
+ }
+
+.btn{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(9, 173, 31, 0.877);
+    width: 150px;
+    height: 100px;
+    color: #fff;
+    cursor: pointer;
+}

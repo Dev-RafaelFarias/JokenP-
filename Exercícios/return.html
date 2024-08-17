@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="top">
+        <img class="logo-dev" src="./img/Dev.jpg" alt="Logo Dev">
+        <h1 class="nameRF">Rafael Farias - Mercado</h1>
+    </header>
+
+    <h2 class="title">Carrinho de compras</h2>
+
+    <section class="main">
+
+        <div class="itens">
+            <img src="./img/arroz-camil.png" alt="Arroz Branco Camil 5kg">
+            <p class="produto">Arroz Branco Camil 5kg</p>
+            <p class="valor-produto" id="arroz">R$34,99</p>
+        </div>
+
+        <div class="itens">
+            <img src="./img/feijão.png" alt="Feijão Preto Máximo 1kg">
+            <p class="produto">Feijão Preto Maximo 1kg</p>
+            <p class="valor-produto" id="feijao">R$19,99</p>
+        </div>
+
+        <div class="itens">
+            <img src="./img/macarrão.jpg" alt="Macarrão Amália Semola Espaguete 1kg">
+            <p class="produto">Macarrão Amália Espaguete 1kg</p>
+            <p class="valor-produto" id="macarrao">R$14,99</p>
+        </div>
+
+        <div class="itens">
+            <img src="./img/oleo.png" alt="Kit c/5un Oleo Soja 900ml">
+            <p class="produto">Kit c/5un Oleo Soja 900ml</p>
+            <p class="valor-produto" id="oleo">R$49,99</p>
+        </div>
+
+        <div class="itens">
+            <img src="./img/linguiça5kg.png" alt="Linguiça Toscana Seara 5kg">
+            <p class="produto">Linguiça Toscana Seara 5kg</p>
+            <p class="valor-produto" id="linguica">R$59,80</p>
+        </div>
+
+        <div class="itens"> <img src="./img/batatas.jpg" alt="Batata Inglesa 5kg">
+            <p class="produto">Batata Inglesa 5kg</p>
+            <p class="valor-produto" id="batatas">R$29,99</p>
+        </div>
+        
+        <div class="itens">
+            <img src="./img/ovos.png" alt="Ovos Brancos Cartela c/30un">
+            <p class="produto">Ovos Brancos Cartela c/30un</p>
+            <p class="valor-produto" id="ovos">R$30,00</p>
+        </div>
+
+        <div class="itens"> <img src="./img/alho.jpg" alt="Alho 500g">
+            <p class="produto">Alho 500g</p>
+            <p class="valor-produto" id="alho">R$15,60</p>
+        </div>
+    </section>
+
+    <section class="final">
+
+        <div class="pedido-total">
+            <p>Todos os produtos acima de R$30,00 com desconto de 10% em toda loja.</p>
+
+            <p>Valor total da compra:<h4 id="valor-total">R$255,35</h4> </p>
+
+            <button onclick="desconto()" class="btn">Calcular Desconto</button>
+            
+            <p>Valor total com descontos: <h3 id="valor-desconto">R$00,00</h3> </p>
+
+            <button onclick="finalizar()" class="btn">Finalizar compras</button>
+            <p class="compra-realizada"></p>
+        </div>
+
+    </section>
+</body>
+    <script src="./script.js"></script>
+</html>

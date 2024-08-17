@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input placeholder="Digite o contato">
+    <p></p>
+    <button onclick="procurar()">Procurar Contato</button>
+
+</body>
+<script>
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contacts = [
+        { name: "Rafael", number: "(21) 977267226" },
+        { name: "Thais", number: "(21)99265-8440" },
+        { name: "Raul", number: "(21)99234-0314" },
+        { name: "Vó Marli", number: "(21)97604-6482" },
+        { name: "Mãe Regina", number: "(21) 912345678"},
+        { name: "Pai Eduardo", number: "(21) 987654321"},
+ ]
+
+    
+
+    function procurar(){
+        
+    for (let i = 0; i < contacts.length; i++) {
+        
+       if(input.value.toLowerCase() === contacts[i].name.toLowerCase()){
+           p.innerHTML = `Contato Encontrado Nome:${contacts[i].name} Tel.:${contacts[i].number}`
+
+            //OU 
+
+         if(input.value.toLowerCase() === contacts[i].name.toLowerCase()){
+              p.innerHTML = "Contato Econtrado, Nome:" + contacts[i].name + " Tel.:" + contacts[i].number
+            }
+        
+           break
+       }
+        else{
+          p.innerHTML = "Contato Não Encontrado"
+      }
+ }
+
+ //OU Usando FOR OF
+    for (const contact of contacts) {
+
+        if (input.value.toLowerCase() === contact.name.toLowerCase()) {
+            p.innerHTML = `Contato Encontrado, Nome:${contact.name} Tel.:${contact.number}`
+            
+            break
+        } 
+        else { p.innerHTML = "Contato Não Encontrado"
+            
+        }
+        
+    }
+}
+</script>
+
+</html>
